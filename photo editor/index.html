@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Görüntü Düzenleyici</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Görüntü Düzenleyici</h1>
+    <label for="fileInput">Resim Yükle</label>
+    <input type="file" id="fileInput">
+    <canvas id="canvas"></canvas>
+    <div id="tools">
+      <button id="zoom">Yakınlaştır</button>
+      <button id="rotate">Döndür</button>
+      <button id="resize">Yeniden Boyutlandır</button>
+      <button id="filter">Filtre</button>
+      <button id="undo">Geri Al</button>
+      <button id="redo">Yinele</button>
+      <button id="save">Kaydet</button>
+    </div>
+    <!-- Popup for rotation -->
+    <div id="popup" class="hidden">
+      <div class="popup-content">
+        <label for="rotation">Derece:</label>
+        <input type="number" id="rotation" placeholder="Derece" min="0" max="360">
+        <button id="applyRotation">✔</button>
+        <button id="cancelRotation">✖</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+#password {
+    margin-top: 20px;
+    word-break: break-word;
+    font-size: 1.2em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

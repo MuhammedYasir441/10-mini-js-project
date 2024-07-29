@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#drawing-canvas {
+    border: 1px solid #000;
+    margin-right: 20px; /* Div ve canvas arasındaki boşluk */
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#color-picker {
+    width: 100px;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+#brush-size-picker {
+    width: 100%;
+}

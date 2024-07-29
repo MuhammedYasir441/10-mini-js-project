@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#to-do-app, #result {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#to-do-app h1 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#to-do-app #a {
+    display: flex;
+    gap: 10px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#add-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#add-button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#task-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #f44336;
+}
+
+.task-delete-button:hover {
+    color: #d32f2f;
+}

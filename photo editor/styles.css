@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #app {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333333;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  label[for="fileInput"] {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  label[for="fileInput"]:hover {
+    background-color: #0056b3;
+  }
+  
+  #canvas {
+    border: 1px solid #cccccc;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #tools {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Popup styling */
+  #popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .popup-content input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .popup-content button {
+    background-color: #28a745;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-content button#cancelRotation {
+    background-color: #dc3545;
+  }
+  
+  .popup-content button:hover {
+    background-color: #218838;
+  }
+  
+  .popup-content button#cancelRotation:hover {
+    background-color: #c82333;
+  }
+  
+  .hidden {
+    display: none;
+  }
